@@ -1,5 +1,6 @@
 //import { useState } from "react";
 import React ,{ useState } from "react";
+import moment from 'moment';
 
 export default function SearchMovies()
 {
@@ -91,7 +92,7 @@ export default function SearchMovies()
                                             </div>
                                         <div className="card--content2">
                                             <h3 className="card--title">{movie.title}</h3>
-                                            <p><small>RELEASE DATE: {movie.release_date}</small></p>
+                                            <p><small>RELEASE DATE: {moment(movie.release_date).format('MMMM Do YYYY')}</small></p>
                                             <p><small>Rating: {movie.vote_average}</small></p>
                                             <p className="card--desc">{movie.overview}</p>
 
