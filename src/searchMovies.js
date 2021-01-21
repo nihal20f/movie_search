@@ -9,7 +9,7 @@ export default function SearchMovies()
 
         const searchMovies = async (e) =>{
 
-            console.log("submitting!!");
+            console.log("submitting!!!!!");
 
 
 
